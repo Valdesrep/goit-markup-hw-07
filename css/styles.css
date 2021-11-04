@@ -29,9 +29,6 @@ img {
   display: block;
   max-width: 100%;
 }
-textarea {
-  resize: none;
-}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -46,7 +43,6 @@ textarea {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -729,7 +725,14 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  resize: none;
   transition: border-color 250ms var(--cubic);
+}
+.modal-form-coment::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-coment:focus {
   border-color: var(--accent-color);
@@ -792,7 +795,7 @@ textarea {
 .checkbox-box {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .form-checkbox-link {
