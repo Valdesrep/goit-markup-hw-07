@@ -765,7 +765,6 @@ img {
 .modal-form-checkbox {
   position: absolute;
   margin-bottom: 30px;
-  appearance: none;
 }
 .checkbox-icon {
   display: inline-block;
