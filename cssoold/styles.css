@@ -214,7 +214,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features{
+.features {
   display: flex;
 }
 .features__item {
@@ -254,16 +254,19 @@ img {
   letter-spacing: 0.03em;
 }
 /* Стиль секции Чем мы занимаемся */
-.section-doing {
+.section-development {
   padding-bottom: 94px;
 }
-.doing-list {
+.development {
   display: flex;
 }
-.doing-item {
+.development__item {
   position: relative;
 }
-.doing-item-box {
+.development__item:not(:last-child) {
+  margin-right: 30px;
+}
+.development__box {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -274,7 +277,7 @@ img {
   bottom: 0;
   left: 0;
 }
-.doing-pre-title {
+.development__text {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -283,21 +286,18 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.doing-item:not(:last-child) {
-  margin-right: 30px;
-}
 /* Стиль секции Наша команда */
 .section-team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-list {
+.team {
   display: flex;
   margin-left: -30px;
   margin-bottom: -30px;
 }
-.team-item {
+.team__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -309,11 +309,33 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-icon-list {
+.description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.description__title {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.description__text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.description__list {
   display: flex;
   justify-content: center;
 }
-.team-link-icon {
+.description__item:not(:last-child) {
+  margin-right: 10px;
+}
+.description__link {
   display: flex;
   background-color: var(--primary-white-color);
   width: 44px;
@@ -324,52 +346,33 @@ img {
   align-items: center;
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
-.team-item-icon:not(:last-child) {
-  margin-right: 10px;
-}
-.team-link-icon:hover,
-.team-link-icon:focus {
+.description__link:hover,
+.description__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-.team-icon {
+.description__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-.description {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.team .title {
-  color: var(--title-text-color);
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
-}
-.team .text {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
 }
 /* Стили секции клиентов */
 .section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-list {
+.clients {
   display: flex;
   justify-content: center;
 }
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
-.clients-item-link {
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,21 +383,24 @@ img {
   height: inherit;
   transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
 }
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-.clients-item-link:hover,
-.clients-item-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: rgba(33, 150, 243, 1);
   border-color: rgba(33, 150, 243, 1);
   cursor: pointer;
 }
 
 /* Стили кнопок портфолио */
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .nav-portfolio {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.nav-portfolio .buttons {
+.portfolio-buttons {
   color: var(--title-text-color);
   background-color: var(--buttons-bgc-color);
   font-family: inherit;
@@ -409,14 +415,8 @@ img {
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
     box-shadow 250ms var(--cubic);
 }
-.nav-portfolio {
-  justify-content: center;
-}
 .nav-portfolio-item:not(:last-child) {
   margin-right: 8px;
-}
-.nav-portfolio {
-  margin-bottom: 50px;
 }
 .nav-portfolio .buttons:hover,
 .nav-portfolio .buttons:focus {
