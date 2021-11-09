@@ -1,0 +1,110 @@
+.footer {
+    background-color: #2f303a;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  /* .footer__box {
+    margin-right: 93px;
+    margin-left: 70px; */
+  
+  .contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .contacts__link {
+    color: var(--primary-white-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color 250ms var(--cubic);
+    text-decoration: none;
+  }
+  .contacts__link--gray {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .contacts__link:hover,
+  .contacts__link:focus {
+    color: var(--accent-color);
+  }
+  .conect {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+  }
+  .social-network {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .social-network__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .sosial-network__link {
+    display: flex;
+    fill: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    transition: background-color 250ms var(--cubic);
+  }
+  .sosial-network__link:hover,
+  .sosial-network__link:focus {
+    background-color: var(--accent-color);
+  }
+  .singer-form {
+    display: flex;
+  }
+  .singer__item {
+    width: 358px;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .singer-button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms var(--cubic);
+  }
+  .singer-button__icon {
+    margin-left: 10px;
+  }
+  .singer-button:hover,
+  .singer-button:focus {
+    background-color: #188ce8;
+  }
